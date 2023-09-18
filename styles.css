@@ -1,0 +1,98 @@
+
+/* 1st style the body */
+
+body{
+    
+    /* first i aligned align items : center given the content in h1 and div 
+    where not centered in center of webpage but after i giving , margin: 0;
+display: flex;flex-direction: column; all gets centered why ?
+ what is the difference with
+  or without it explain in detail for a beginner to understand
+  
+  
+  
+  When you apply display: flex; and flex-direction: column; 
+  to your container, you transform it into a flex container with a vertical layout.
+   Now, when you use align-items: center;, 
+   it centers the child elements (the <h1> and <div>) along the vertical axis 
+   within the container.
+
+So, in summary, adding display: flex;, flex-direction: column;, 
+and align-items: center; to your container 
+changes the layout from the default block layout to a flex layout,
+ and it centers the child elements within that layout along the vertical axis. 
+ This gives you control over the alignment and 
+ positioning of elements in a more flexible and responsive way.*/
+    
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+
+    /* background image adjustments */
+    background-image: url(image.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+h1{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 4px -1px 6px black;
+}
+
+.clock{
+    display: flex;
+}
+
+.clock div{
+    margin: 5px;
+    position: relative;
+}
+
+.clock span{
+        height: 90px;
+        width: 133px;
+        color: rgb(255, 255, 255);
+        background: rgb(1, 108, 8);
+        opacity: .8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 60px;
+        text-shadow: 4px -1px 6px rgba(0, 0, 0, 0.8);
+
+}
+
+.clock .text{
+
+    height: 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: rgb(1 27 1);
+    letter-spacing: 3px;
+
+}
+
+.clock #ampm{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    background: #ff7e23;
+}
+
+
+
+
+
